@@ -58,5 +58,53 @@ CREATE TABLE tbl_accounts(
 	is_used datetime NOT NULL
 );
 
+CREATE TABLE tbl_jobs(
+	id VARCHAR(10) PRIMARY KEY,
+	title VARCHAR(35) NOT NULL,
+	min_salary INT,
+	max_salary INT
+);
+
+CREATE TABLE tbl_job_histories(
+	employee INT,
+	start_date date,
+	end_date date,
+	status varchar(10)NOT NULL,
+	job VARCHAR(10)NOT NULL,
+	department INT
+	PRIMARY KEY (employee,start_date)
+);
 
 
+CREATE TABLE tbl_employees (
+	id INT PRIMARY KEY,
+	first_name VARCHAR(25) NOT NULL,
+	last_name VARCHAR(25),
+	gender VARCHAR(10) NOT NULL,
+	email VARCHAR(25) NOT NULL UNIQUE,
+	phone VARCHAR(20),
+	hire_date date NOT NULL,
+	salary INT,
+	manager INT,
+	job VARCHAR(10) NOT NULL,
+	department INT NOT NULL
+);
+
+CREATE TABLE tbl_electronics(
+	id INT PRIMARY KEY,
+	title VARCHAR(50) NOT NULL,
+	brand VARCHAR(50),
+	model VARCHAR(50) NOT NULL,
+	serial_num VARCHAR(50) NOT NULL,
+	purchase_date DATE,
+	status VARCHAR(20) DEFAULT 'available'
+);
+
+CREATE TABLE tbl_loans(
+	id INT PRIMARY KEY,
+	employee_id INT NOT NULL,
+	electronics_id INT NOT NULL,
+	loan_date DATE not null,
+	return_date DATE,
+	status VARCHAR(30) DEFAULT 'loaned'
+);
