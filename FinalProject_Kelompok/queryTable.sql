@@ -1,4 +1,3 @@
-CREATE DATABASE db_employee;
 USE db_employee
 GO
 CREATE TABLE tbl_regions(
@@ -33,7 +32,7 @@ CREATE TABLE tbl_permissions(
 );
 
 CREATE TABLE tbl_role_permissions (
-	id INT IDENTITY (1,1) PRIMARY KEY
+	id INT IDENTITY (1,1) PRIMARY KEY,
 	role INT NOT NULL,
 	permission INT NOT NULL
 );
