@@ -1,7 +1,7 @@
 USE db_employee
 GO
 CREATE TABLE tbl_regions(
-	id INT IDENTITY(1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	name VARCHAR(25) NOT NULL
 );
 
@@ -12,7 +12,7 @@ CREATE TABLE tbl_countries(
 );
 
 CREATE TABLE tbl_locations(
-	id INT IDENTITY(1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	street_address VARCHAR(40),
 	postal_code VARCHAR(12),
 	city VARCHAR(30) NOT NULL,
@@ -21,35 +21,35 @@ CREATE TABLE tbl_locations(
 );
 
 CREATE TABLE tbl_departments(
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	name VARCHAR(30) NOT NULL,
 	location INT
 );
 
 CREATE TABLE tbl_permissions(
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE tbl_role_permissions (
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	role INT NOT NULL,
 	permission INT NOT NULL
 );
 
 CREATE TABLE tbl_roles(
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE tbl_account_roles(
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	account INT NOT NULL,
 	role INT NOT NULL
 );
 
 CREATE TABLE tbl_accounts(
-	id INT IDENTITY (1,1) PRIMARY KEY,
+	id INT PRIMARY KEY,
 	username VARCHAR(25),
 	password VARCHAR(255) NOT NULL,
 	otp INT NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE tbl_employees (
 	first_name VARCHAR(25) NOT NULL,
 	last_name VARCHAR(25),
 	gender VARCHAR(10) NOT NULL,
-	email VARCHAR(25) NOT NULL UNIQUE,
+	email VARCHAR(50) NOT NULL UNIQUE,
 	phone VARCHAR(20),
 	hire_date date NOT NULL,
 	salary INT,
