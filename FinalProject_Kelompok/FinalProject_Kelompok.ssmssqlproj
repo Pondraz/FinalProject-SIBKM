@@ -73,6 +73,36 @@
           <AssociatedConnUserName />
           <FullPath>queryView.sql</FullPath>
         </FileNode>
+        <FileNode Name="TR-01.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TR-01.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TR-02.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TR-02.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TR-03.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TR-03.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TR-04.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TR-04.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TR-05.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>TR-05.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
