@@ -19,17 +19,59 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Apapantulis.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Apapantulis.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F01.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F01.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F02.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F02.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F03.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F03.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F04.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F04.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F05.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F05.sql</FullPath>
+        </FileNode>
+        <FileNode Name="F06.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>F06.sql</FullPath>
+        </FileNode>
         <FileNode Name="queryTable.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>queryTable.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="queryView.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>queryView.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
