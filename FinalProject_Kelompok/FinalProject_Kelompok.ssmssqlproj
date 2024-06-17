@@ -181,6 +181,12 @@
           <AssociatedConnUserName />
           <FullPath>SD-018.sql</FullPath>
         </FileNode>
+        <FileNode Name="SD-019.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-019.sql</FullPath>
+        </FileNode>
         <FileNode Name="SD-032.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>

@@ -1,9 +1,13 @@
 Use db_employee
 GO
 
-EXEC usp_edit_region
-    @RegionId = 5,
-    @RegionName = 'Antartica'
+exec usp_add_role
+	@roleID = 5,
+	@rolename = 'testing'
+
+--EXEC usp_edit_region
+--    @RegionId = 5,
+--    @RegionName = 'Antartica'
 
 --EXEC usp_delete_country
 --	@Countryid ='TH'
