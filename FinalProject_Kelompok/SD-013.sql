@@ -18,23 +18,28 @@ GO
 -- Create date: 
 -- Description:	
 -- =============================================
-CREATE OR ALTER PROCEDURE usp_delete_region
-    @RegionId INT
+CREATE OR ALTER PROCEDURE usp_add_country
+    @CountryId char(3),
+    @CountryName VARCHAR(100),
+	@countryRegion INT
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check if the Region ID exists in tbl_regions
-    IF NOT EXISTS (SELECT 1 FROM tbl_regions WHERE id = @RegionId)
+    -- Check if the Country ID already exists in tbl_countries
+    IF EXISTS (SELECT 1 FROM tbl_countries WHERE id = @CountryId)
     BEGIN
-        SELECT 'Region ID not found' AS Result;
+        SELECT 'Country ID already exists' AS Result;
         RETURN;
     END
 
-    -- Delete from tbl_regions
-    DELETE FROM tbl_regions
-    WHERE id = @RegionId;
+    -- Insert into tbl_countries
+    INSERT INTO tbl_countries (id, name,region)
+    VALUES (@CountryId, @CountryName,@countryRegion);
 
-    SELECT 'Region deleted successfully' AS Result;
+    -- Select the newly inserted country to confirm the correct result
+    SELECT *
+    FROM tbl_countries
+    WHERE id = @CountryId;
 END
 GO

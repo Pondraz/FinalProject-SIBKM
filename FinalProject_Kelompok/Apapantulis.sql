@@ -1,7 +1,29 @@
 Use db_employee
 GO
 
+EXEC usp_edit_region
+    @RegionId = 5,
+    @RegionName = 'Antartica'
 
+--EXEC usp_delete_country
+--	@Countryid ='TH'
+
+--EXEC usp_edit_country
+--	@Countryid ='TH',
+--	@countryname = 'Thai',
+--	@countryRegion = 2
+	
+
+--EXEC usp_Delete_location
+--	@locationid = 3300
+
+--EXEC usp_edit_location
+--	@LocationId = 3300,
+--	@Address = 'jalan bromo',
+--	@PostalCode= '13221',
+--	@City = 'jakarta',
+--	@state= 'jakarta barat',
+--    @country = 'ID'
 
 --EXEC usp_edit_department
 --	 @DepartmentId = 260,

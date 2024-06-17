@@ -18,8 +18,9 @@ GO
 -- Create date: 
 -- Description:	
 -- =============================================
-CREATE OR ALTER PROCEDURE usp_delete_region
-    @RegionId INT
+CREATE OR ALTER PROCEDURE usp_edit_region
+    @RegionId INT,
+    @RegionName VARCHAR(25)
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -31,10 +32,15 @@ BEGIN
         RETURN;
     END
 
-    -- Delete from tbl_regions
-    DELETE FROM tbl_regions
+    -- Update tbl_regions with the provided values
+    UPDATE tbl_regions
+    SET
+        name = @RegionName
     WHERE id = @RegionId;
 
-    SELECT 'Region deleted successfully' AS Result;
+    -- Select the updated region to confirm the correct result
+    SELECT *
+    FROM tbl_regions
+    WHERE id = @RegionId;
 END
 GO
