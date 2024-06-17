@@ -18,26 +18,23 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE OR ALTER PROCEDURE usp_add_jobs
-    @JobId VARCHAR(10),
-    @JobTitle VARCHAR(100),
-    @minSalary int,
-	@maxSalary int
+CREATE OR ALTER PROCEDURE usp_delete_jobs
+    @JobId VARCHAR(10)
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check if the Job ID already exists in tbl_jobs
-    IF EXISTS (SELECT 1 FROM tbl_jobs WHERE id = @JobId)
+    -- Check if the Job ID exists in tbl_jobs
+    IF NOT EXISTS (SELECT 1 FROM tbl_jobs WHERE id = @JobId)
     BEGIN
-        SELECT 'Job ID already exists' AS Result;
+        SELECT 'Job ID not found' AS Result;
         RETURN;
     END
 
-    -- Insert into tbl_jobs
-    INSERT INTO tbl_jobs (id, title, min_salary,max_salary)
-    VALUES (@JobId, @JobTitle, @minSalary,@maxSalary);
+    -- Delete from tbl_jobs
+    DELETE FROM tbl_jobs
+    WHERE id = @JobId;
 
-    SELECT 'Job added successfully' AS Result;
+    SELECT 'Job deleted successfully' AS Result;
 END
 GO

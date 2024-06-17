@@ -18,26 +18,31 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE OR ALTER PROCEDURE usp_add_jobs
-    @JobId VARCHAR(10),
-    @JobTitle VARCHAR(100),
-    @minSalary int,
-	@maxSalary int
+CREATE OR ALTER PROCEDURE usp_edit_department
+    @DepartmentId INT,
+    @DepartmentName VARCHAR(30),
+	@DepartmentLocation INT
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check if the Job ID already exists in tbl_jobs
-    IF EXISTS (SELECT 1 FROM tbl_jobs WHERE id = @JobId)
+    -- Check if the Department ID exists in tbl_departments
+    IF NOT EXISTS (SELECT 1 FROM tbl_departments WHERE id = @DepartmentId)
     BEGIN
-        SELECT 'Job ID already exists' AS Result;
+        SELECT 'Department ID not found' AS Result;
         RETURN;
     END
 
-    -- Insert into tbl_jobs
-    INSERT INTO tbl_jobs (id, title, min_salary,max_salary)
-    VALUES (@JobId, @JobTitle, @minSalary,@maxSalary);
+    -- Update tbl_departments with the provided values
+    UPDATE tbl_departments
+    SET
+        name = @DepartmentName,
+		location = @DepartmentLocation
+    WHERE id = @DepartmentId;
 
-    SELECT 'Job added successfully' AS Result;
+    -- Select the updated department to confirm the correct result
+    SELECT *
+    FROM tbl_departments
+    WHERE id = @DepartmentId;
 END
 GO

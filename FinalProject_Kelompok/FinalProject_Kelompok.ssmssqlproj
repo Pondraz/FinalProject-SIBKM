@@ -97,6 +97,54 @@
           <AssociatedConnUserName />
           <FullPath>SD-004.sql</FullPath>
         </FileNode>
+        <FileNode Name="SD-005.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-005.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-006.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-006.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-007.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-007.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-008.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-008.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-009.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-009.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-032.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-032.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-033.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-033.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SD-034.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SD-034.sql</FullPath>
+        </FileNode>
         <FileNode Name="TR-01.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:RENDRA:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>RENDRA</AssociatedConnSrvName>

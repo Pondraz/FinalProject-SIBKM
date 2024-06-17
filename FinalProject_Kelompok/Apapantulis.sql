@@ -1,11 +1,42 @@
 Use db_employee
 GO
 
---SELECT dbo.func_salary('AD_VP', 16000)
 
+
+--EXEC usp_edit_department
+--	 @DepartmentId = 260,
+--    @DepartmentName = 'SATPAM',
+--	@DepartmentLocation = 1700
+
+--EXEC usp_edit_jobs
+--	 @JobId = 'IT_SUP',
+--    @JobTitle ='IT SUPPORT',
+--    @minSalary = 3000,
+--	@maxSalary = 6000
+
+
+--SELECT dbo.func_salary('AD_VP', 16000)
+--EXEC usp_edit_employee
+--    @EmployeeID = 103,
+--    @FirstName = 'Alan',
+--    @LastName = 'Walker',
+--	@gender = 'male',
+--    @Email ='test2@example.com',
+--	@phone ='123-456-789',
+--	@hiredate = '2024-05-17',
+--	@salary = 18000,
+--	@manager = 100,
+--	@job ='AD_VP',
+--	@department = 90,
+--    @Username ='213Untuksv',
+--    @Password ='Ibab@42069';
+
+--EXEC usp_edit_employee
+ --   @EmployeeID = 101,
+  --  @FirstName = 'Alan';
 
 --EXEC usp_generate_otp
-  --  @Email = 'kbednall1@yellowbook.com';
+   -- @Email = 'kbednall1@yellowbook.com';
 
 --EXEC usp_forgot_password
   --  @Email = 'kbednall1@yellowbook.com',

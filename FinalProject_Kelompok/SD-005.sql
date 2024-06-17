@@ -18,26 +18,33 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE OR ALTER PROCEDURE usp_add_jobs
+CREATE OR ALTER PROCEDURE usp_edit_jobs
     @JobId VARCHAR(10),
-    @JobTitle VARCHAR(100),
+    @JobTitle VARCHAR(35),
     @minSalary int,
 	@maxSalary int
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check if the Job ID already exists in tbl_jobs
-    IF EXISTS (SELECT 1 FROM tbl_jobs WHERE id = @JobId)
+    -- Check if the Job ID exists in tbl_jobs
+    IF NOT EXISTS (SELECT 1 FROM tbl_jobs WHERE id = @JobId)
     BEGIN
-        SELECT 'Job ID already exists' AS Result;
+        SELECT 'Job ID not found' AS Result;
         RETURN;
     END
 
-    -- Insert into tbl_jobs
-    INSERT INTO tbl_jobs (id, title, min_salary,max_salary)
-    VALUES (@JobId, @JobTitle, @minSalary,@maxSalary);
+    -- Update tbl_jobs with the provided values
+    UPDATE tbl_jobs
+    SET
+        title = @JobTitle,
+        min_salary = @minSalary,
+		max_salary = @maxSalary
+    WHERE id = @JobId;
 
-    SELECT 'Job added successfully' AS Result;
+    -- Select the updated job to confirm the correct result
+    SELECT *
+    FROM tbl_jobs
+    WHERE id = @JobId;
 END
 GO
