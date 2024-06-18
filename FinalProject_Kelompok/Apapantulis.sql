@@ -1,9 +1,16 @@
 Use db_employee
 GO
 
-exec usp_add_role
-	@roleID = 5,
-	@rolename = 'testing'
+exec usp_add_permission
+	@PermissionId =5,
+    @PermissionName = 'TEST'
+
+--EXEC usp_delete_role
+--	@roleid= 5
+
+--exec usp_edit_role
+--	@roleID = 5,
+--	@rolename = 'TESTING'
 
 --EXEC usp_edit_region
 --    @RegionId = 5,
