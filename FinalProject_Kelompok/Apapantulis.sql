@@ -1,9 +1,35 @@
 Use db_employee
 GO
 
-exec usp_add_permission
-	@PermissionId =5,
-    @PermissionName = 'TEST'
+EXEC usp_return_loan
+	@loanid = 30
+
+--EXEC usp_delete_loan
+--	@loanid = 30
+
+--EXEC usp_add_loan
+--	@loanid = 30,
+--	@employeeid = 104,
+--	@electronicid = 38
+
+--EXEC usp_delete_electronics
+--	@ElectronicId = 54
+
+--EXEC usp_add_electronics
+--	@ElectronicId = 54,
+--    @ElectronicName = 'TEST',
+--    @ElectronicBrand = 'TEST',
+--    @ElectronicModel = 'TEST',
+--    @SerialNum = 'daojwb1213',
+--    @PurchaseDate = '2023-01-01'
+
+
+--EXEC usp_delete_permission
+--	@PermissionId =5
+
+--exec usp_add_permission
+--	@PermissionId =5,
+--    @PermissionName = 'TEST'
 
 --EXEC usp_delete_role
 --	@roleid= 5
